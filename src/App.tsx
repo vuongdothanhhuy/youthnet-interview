@@ -1,9 +1,9 @@
 import gsap                                    from 'gsap'
 import {Fragment, useEffect, useRef, useState} from 'react'
 
-const TIME_LIMIT = 30000
+const TIME_LIMIT = 60000
 const MOLE_SCORE = 100
-const NUMBER_OF_MOLES = 5
+const NUMBER_OF_MOLES = 24
 const POINTS_MULTIPLIER = 0.9
 const TIME_MULTIPLIER = 1.25
 
@@ -11,8 +11,8 @@ const TIME_MULTIPLIER = 1.25
 
 // @ts-ignore
 const generateMoles = amount => new Array(amount).fill().map(() => ({
-    speed: gsap.utils.random(0.5, 1),
-    delay: gsap.utils.random(0.5, 4),
+    speed: gsap.utils.random(0.5, ),
+    delay: gsap.utils.random(1, 3),
     points: MOLE_SCORE
 }))
 
